@@ -16,16 +16,17 @@
 //var outputTarget = document.getElementById("output-target");
 //var sections = document.getElementsByClassName("article-section");
 
-var heading = documentGetElementById("page-header");
-var title = documentGetElementById("page-title");
-var articleElement = documentGetElementById("article-section");
-var userInput = documentGetElementById("keypress-input");
-var outputTarget = documentGetElementById("output-target");
-var guineaPig = documentGetElementById("guinea-pig");
-var colorBtn = documentGetElementById("add-color");
-var hulkBtn = documentGetElementById("make-large");
-var borderBtn = documentGetElementById("add-border");
-var roundBtn = documentGetElementById("add-rounding");
+//var headings = document.GetElementById("page-header");
+var title = document.getElementById("page-title");
+var articleElement = document.getElementById("article-section");
+var userClickAlert = document.getElementById("article-section")
+var userInput = document.getElementById("keypress-input");
+var outputTarget = document.getElementById("output-target");
+var guineaPig = document.getElementById("guinea-pig");
+var colorBtn = document.getElementById("add-color");
+var hulkBtn = document.getElementById("make-large");
+var borderBtn = document.getElementById("add-border");
+var roundBtn = document.getElementById("add-rounding");
 var btns = document.getElementsByTagName("button");
 
 title.addEventListener("mouseover", function(event) {
@@ -58,8 +59,8 @@ roundBtn.addEventListener("click", function() {
 });
 
 for (var i = 0; i < articleElement.length; i++) {
-	articleElement[0].classList.add("bold");
-	articleElement[articleElement.length - 1].classList.add("italic");
+  articleElement[0].classList.add("bold");
+  articleElement[articleElement.length - 1].classList.add("italic");
 }
 
 for (var i = 0; i < btns.length; i++) {
